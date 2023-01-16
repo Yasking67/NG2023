@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>ИС2.png</file>
+        <file>НВ.png</file>
+        <file>background.jpg</file>
+        <file>image.png</file>
+        <file>title.png</file>
+        <file>snow.png</file>
+        <file>snow2.png</file>
+        <file>Web-Blue-Button-PNG-Photos.png</file>
+        <file>png-transparent-button-gui-minus-green-colour-push-color-green-color-thumbnail.png</file>
+        <file>pngwing.com.png</file>
+        <file>фотки людей/Angelina.png</file>
+        <file>фотки людей/Anya.png</file>
+        <file>фотки людей/Drozd.png</file>
+        <file>фотки людей/Elina.png</file>
+        <file>фотки людей/Gunya.png</file>
+        <file>фотки людей/Inna.png</file>
+        <file>фотки людей/Ksyusha.png</file>
+        <file>фотки людей/Lesha.png</file>
+        <file>фотки людей/Lesha2.png</file>
+        <file>фотки людей/Nikita.png</file>
+        <file>фотки людей/Pasha.png</file>
+        <file>фотки людей/Petrik.png</file>
+        <file>фоны/title4.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>welcome.wav</file>
+        <file>welcome.mp3</file>
+        <file>фоны/button12Gray.png</file>
+    </qresource>
+</RCC>

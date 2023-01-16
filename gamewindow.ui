@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gamewindow</class>
+ <widget class="QWidget" name="gamewindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#frame{border-image: url(:/new/prefix1/snow2.png) 0 0 0 0 stretch stretch;}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#lineEdit_timer{border-image: url(:/new/prefix1/pngwing.com.png) 0 0 0 0 stretch stretch; color : white; padding-bottom: 40px;}
+#lineEdit_score1{padding-bottom: 10px;}
+#lineEdit_score2{padding-bottom: 10px;}
+
+#pushButton_start{border-image: url(:/new/prefix1/pngwing.com.png) 0 0 0 0 stretch stretch; color : white; padding-bottom: 10px;}
+#pushButton_start:pressed{color: black}
+#pushButton_start:hover{border-style: outset; border-width: 2px; border-radius: 10px; border-color: beige;}
+
+#pushButton_pause{border-image: url(:/new/prefix1/pngwing.com.png) 0 0 0 0 stretch stretch; color : white; padding-bottom: 10px;}
+#pushButton_pause:pressed{color: black}
+#pushButton_pause:hover{border-style: outset; border-width: 2px; border-radius: 10px; border-color: beige;}
+
+#pushButton_new{border-image: url(:/new/prefix1/pngwing.com.png) 0 0 0 0 stretch stretch; color : white; padding-bottom: 10px;}
+#pushButton_new:pressed{color: black}
+#pushButton_new:hover{border-style: outset; border-width: 2px; border-radius: 10px; border-color: beige;}
+
+#pushButton_exit{border-image: url(:/new/prefix1/pngwing.com.png) 0 0 0 0 stretch stretch; color : white; padding-bottom: 10px;}
+#pushButton_exit:pressed{color: black}
+#pushButton_exit:hover{border-style: outset; border-width: 2px; border-radius: 10px; border-color: beige;}
+
+#pushButton_plus1{border-image: url(:/new/prefix1/pngwing.com.png) 0 0 0 0 stretch stretch; color : white; padding-bottom: 20px;}
+#pushButton_plus1:pressed{color: black}
+#pushButton_plus1:hover{border-style: outset; border-width: 2px; border-radius: 10px; border-color: beige;}
+
+#pushButton_minus1{border-image: url(:/new/prefix1/pngwing.com.png) 0 0 0 0 stretch stretch; color : white; padding-bottom: 20px;}
+#pushButton_minus1:pressed{color: black}
+#pushButton_minus1:hover{border-style: outset; border-width: 2px; border-radius: 10px; border-color: beige;}
+
+#pushButton_plus2{border-image: url(:/new/prefix1/pngwing.com.png) 0 0 0 0 stretch stretch; color : white; padding-bottom: 20px;}
+#pushButton_plus2:pressed{color: black}
+#pushButton_plus2:hover{border-style: outset; border-width: 2px; border-radius: 10px; border-color: beige;}
+
+#pushButton_minus2{border-image: url(:/new/prefix1/pngwing.com.png) 0 0 0 0 stretch stretch; color : white; padding-bottom: 20px;}
+#pushButton_minus2:pressed{color: black}
+#pushButton_minus2:hover{border-style: outset; border-width: 2px; border-radius: 10px; border-color: beige;}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_body">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>270</y>
+      <width>820</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_body{background-color: rgba(255,255,255,90%);  padding-right: 60px; padding-left: 60px;}</string>
+    </property>
+    <property name="text">
+     <string>TextLabelTextLabelTextLabelTextLabelTextLabelTextLabelTextxtLabelTextLabe dsfgdsfgdsfh texttetxt</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_exit">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>910</y>
+      <width>200</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Завершить 
+игру</string>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>175</width>
+      <height>175</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/new/prefix1/фотки людей/Inna.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>100</y>
+      <width>175</width>
+      <height>175</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/new/prefix1/фотки людей/Nikita.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>325</y>
+      <width>175</width>
+      <height>175</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/new/prefix1/фотки людей/Drozd.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>325</y>
+      <width>175</width>
+      <height>175</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/new/prefix1/фотки людей/Angelina.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>550</y>
+      <width>175</width>
+      <height>175</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/new/prefix1/фотки людей/Elina.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>550</y>
+      <width>175</width>
+      <height>175</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/new/prefix1/фотки людей/Lesha2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_25">
+    <property name="geometry">
+     <rect>
+      <x>1420</x>
+      <y>100</y>
+      <width>175</width>
+      <height>175</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/new/prefix1/фотки людей/Petrik.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>1670</x>
+      <y>100</y>
+      <width>175</width>
+      <height>175</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/new/prefix1/фотки людей/Gunya.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>1420</x>
+      <y>325</y>
+      <width>175</width>
+      <height>175</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/new/prefix1/фотки людей/Lesha.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>1670</x>
+      <y>325</y>
+      <width>175</width>
+      <height>175</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/new/prefix1/фотки людей/Ksyusha.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>1420</x>
+      <y>550</y>
+      <width>175</width>
+      <height>175</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/new/prefix1/фотки людей/Pasha.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="ClickableLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>1670</x>
+      <y>550</y>
+      <width>175</width>
+      <height>175</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/new/prefix1/фотки людей/Anya.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_name">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>150</y>
+      <width>820</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>43</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_name{background-color: rgba(255,255,255,50%); color: black}
+</string>
+    </property>
+    <property name="text">
+     <string>НАЗВАНИЕ ИГРЫ</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_score1">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>870</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>37</pointsize>
+     </font>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_plus1">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>880</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>32</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_minus1">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>880</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>47</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_plus2">
+    <property name="geometry">
+     <rect>
+      <x>1485</x>
+      <y>880</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>23</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_score2">
+    <property name="geometry">
+     <rect>
+      <x>1570</x>
+      <y>870</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>37</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_minus2">
+    <property name="geometry">
+     <rect>
+      <x>1675</x>
+      <y>880</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_timer">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>820</y>
+      <width>380</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>61</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="inputMask">
+     <string>00:00</string>
+    </property>
+    <property name="text">
+     <string>01:00</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_start">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>820</y>
+      <width>200</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Старт</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_pause">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>910</y>
+      <width>200</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Пауза</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_new">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>820</y>
+      <width>200</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Вернуть 
+ таймер</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ClickableLabel</class>
+   <extends>QLabel</extends>
+   <header>clickablelabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
