@@ -9,6 +9,7 @@
 #include <QApplication>
 
 //test
+//add changes to project
 
 int main(int argc, char *argv[])
 {
